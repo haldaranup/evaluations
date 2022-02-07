@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #container {
+            width: 50%;
+            height: 720px;
+            display: grid;
+            border: 8px solid red;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(13, 50px);
+            margin: auto;
+            grid-template-areas:
+                "a a a a a a a a a a a a"
+                "a a a a a a a a a a a a"
+                "b b b b b b b c c c c c"
+                "b b b b b b b c c c c c"
+                "b b b b b b b c c c c c"
+                "b b b b b b b d d d d d"
+                "b b b b b b b d d d d d"
+                "b b b b b b b d d d d d"
+                "e e e e e e e e e e e e"
+                "e e e e e e e e e e e e"
+                "e e e e e e e e e e e e"
+                "e e e e e e e e e e e e"
+                "f f f f f f f f f f f f"
+                "f f f f f f f f f f f f"
+            ;
+        }
+
+        .header {
+            grid-area: a;
+        }
+
+        .article {
+            grid-area: b;
+        }
+
+        .text1 {
+            grid-area: c;
+        }
+
+        .text2 {
+            grid-area: d;
+        }
+
+        .main {
+            grid-area: e;
+        }
+
+        .footer {
+            grid-area: f;
+        }
+
+        .box {
+            margin: 16px;
+            background-color: #3d405b;
+            color: white;
+            border-radius: 5px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box header a">
+            <h1>Header</h1>
+        </div>
+        <div class="box article b">
+            <h1>Article</h1>
+        </div>
+        <div class="box text1 c">
+            <h1>Text1</h1>
+        </div>
+        <div class="box text2 d">
+            <h1>Text2</h1>
+        </div>
+        <div class="box main e">
+            <h1>Main</h1>
+        </div>
+        <div class="box footer f">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>

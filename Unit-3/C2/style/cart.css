@@ -1,0 +1,19 @@
+#cart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#cart img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+a {
+    margin: 50px;
+    color: rgb(13, 2, 63);
+    text-decoration: none;
+    font-size: 1.25rem;
+    
+}

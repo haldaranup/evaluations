@@ -52,15 +52,15 @@ function renderProducts(pro) {
     cartbtn.textContent = "Add to Cart";
 
     cartbtn.addEventListener("click", function (){
-        addtocart()
+        addtocart(p)
     })
 
     div.append(name, image, cartbtn);
     menu.append(div);
   });
-  function addtocart(){
+  function addtocart(p){
       let cart = localStorage.getItem("cart")
       cart.push(p)
-      localStorage.setItem("cart", JSON.stringify)
+      localStorage.setItem("cart", JSON.stringify(cart))
   }
 }

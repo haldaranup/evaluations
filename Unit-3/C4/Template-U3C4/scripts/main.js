@@ -10,7 +10,7 @@ function appendArticles(articles, main) {
   articles.forEach((p) => {
     let div = document.createElement("div");
 
-    let title = document.createElement("p");
+    let title = document.createElement("h2");
     title.textContent = p.title;
     let image = document.createElement("img");
     image.src = p.urlToImage;

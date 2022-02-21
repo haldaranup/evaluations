@@ -13,13 +13,20 @@
 #sidebar{
     flex: 2;
     border: 1px solid gray;
+    border-radius: 8px;
 }
 #main{
     flex: 7;
 }
 #main div{
     border: 1px solid gray;
+    border-radius: 8px;
     margin-bottom: 40px;
+    padding: 25px;
+}
+#main h2{
+    margin-bottom: 20px;
+    color: #cc0a6b;
 }
 
 #main img{
@@ -39,6 +46,8 @@
 }
 #sidebar :nth-child(1){
     background-color: #020531;
-    color: #ffee00;
-    
+    color: #ffee00; 
+}
+p{
+    color: #020346;
 }

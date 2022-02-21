@@ -27,7 +27,7 @@
 <script type="module">
   import storeSearchterm from "./scripts/search.js";
   import sidebar from "./components/sidebar.js";
-  import { apiCall, appendArticles } from "./scripts/main.js";
+  import { appendArticles } from "./scripts/main.js";
 
   let nav = document.getElementById("sidebar");
   nav.innerHTML = sidebar();
@@ -36,6 +36,7 @@
   let main = document.getElementById("main");
 
   appendArticles(res, main);
+
 
   let search = document.getElementById("searchbar");
 

@@ -57,6 +57,11 @@ const branchDetail = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    masterId:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "master"
+    }
+
   },
   {
     timestamps: true,
@@ -154,6 +159,26 @@ app.get("/users", async (req, res) => {
     console.log("error:", error);
   }
 });
+
+app.post("/saving", async (req, res)=>{
+    try {
+        const user = await User.create(req.body);
+        return res.send(user)
+    } catch (error) {
+        console.log('error:', error)
+        
+    }
+})
+
+app.post("/fixed", async (req, res)=>{
+    try {
+        const user = await User.create(req.body);
+        return res.send(user)
+    } catch (error) {
+        console.log('error:', error)
+        
+    }
+})
 
 app.listen("3000", () => {
   try {

@@ -15,15 +15,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/", async (req, res) => {
-  try {
-    const user = await User.findById({ id: req.params.id }).lean().exec();
-    return res.status(200).send(user);
-  } catch (error) {
-    return res.status(401).send("Invalid Credentials");
-  }
-});
-
 router.post(
   "/",
   body("firstName")
@@ -73,7 +64,5 @@ router.post(
     }
   }
 );
-
-
 
 module.exports = router;
